@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         button_github.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse(""))
+                Uri.parse("https://github.com/yeshuwahane/AnimeQuotesApp/tree/main"))
             startActivity(intent)
         }
 
