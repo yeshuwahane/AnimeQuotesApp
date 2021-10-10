@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Anime Quote</string>
+    <string name="show_quote">Show Quote</string>
+    <string name="button_next_quotes">Next Quotes</string>
+    <string name="anime_name">Anime Name</string>
+    <string name="anime_character_name">Anime Character Name</string>
+    <string name="anime_quote">anime_quote</string>
+    <string name="animechan">Animechan</string>
+    <string name="button_github">source code [github]</string>
+    <string name="animechan_desc">A free restful API serving quality anime quotes</string>
+</resources>
