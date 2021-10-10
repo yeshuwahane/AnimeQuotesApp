@@ -1,9 +1,13 @@
 package com.cybernerd.animequote
 
+import android.annotation.SuppressLint
+import android.content.ClipData
+import android.content.ClipboardManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_quotes.*
 import kotlinx.android.synthetic.main.quote_item_layout.*
@@ -35,9 +39,14 @@ class Activity_Quotes : AppCompatActivity() {
 
 
 
+
+
+
+
     }
 
     //Calling Api to get quotes
+    @SuppressLint("ServiceCast")
     fun getAnimeQuotesApi() {
 
         MyApi.MyApi().getRandomAnimeQuotes().enqueue(object : Callback<AnimeModel>{
@@ -46,6 +55,10 @@ class Activity_Quotes : AppCompatActivity() {
 
                 animeQuoteAdapter.setAnimeData(response.body()!!)
                 progressbar.visibility = View.GONE
+
+
+
+
 
             }
 
@@ -61,5 +74,10 @@ class Activity_Quotes : AppCompatActivity() {
 
 
 
+
+
+
+
     }
+
 }
